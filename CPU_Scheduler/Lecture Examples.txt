@@ -1,0 +1,13 @@
+
+
+SJF
+p1 0 7 cyan p2 2 4 ORANGE p3 4 1 PINK p4 5 4 gray
+
+SRTF
+p1 0 8 cyan p2 1 4 ORANGE p3 2 9 PINK p4 3 5 gray
+
+PRIORITY
+p1 0 10 3 cyan p2 0 1 1 ORANGE p3 0 2 4 PINK p4 0 1 5 gray p5 0 5 2 red
+
+AG
+p1 0 17 4 cyan p2 3 6 9 ORANGE p3 4 10 3 PINK p4 29 4 8 gray
