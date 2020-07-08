@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.GetInput">
+   <children>
+      <Label layoutX="104.0" layoutY="80.0" text="Board Width &amp; Height" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="359.0" layoutY="80.0" text="Cells" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="boardDim" layoutX="250.0" layoutY="75.0" prefHeight="25.0" prefWidth="100.0" />
+      <Button fx:id="dimSet" layoutX="200.0" layoutY="120.0" mnemonicParsing="false" onAction="#setDim" opacity="0.8" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Set Board Dimensions" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="121.0" layoutY="347.0" text="Ship Size" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="431.0" layoutY="347.0" text="Count" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Label>
+      <ChoiceBox fx:id="shipsSizes" layoutX="100.0" layoutY="368.0" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="shipCount" layoutX="400.0" layoutY="368.0" prefHeight="25.0" prefWidth="100.0" />
+      <Button fx:id="addShip" layoutX="200.0" layoutY="415.0" mnemonicParsing="false" onAction="#addShip" opacity="0.8" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Add to Table" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="remShip" layoutX="200.0" layoutY="470.0" mnemonicParsing="false" onAction="#remShip" opacity="0.8" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Remove from Table" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="startGame" layoutX="390.0" layoutY="560.0" mnemonicParsing="false" onAction="#startGame" opacity="0.8" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Start Game" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="back" layoutX="10.0" layoutY="560.0" mnemonicParsing="false" onAction="#backToMenu" opacity="0.8" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Back To Menu" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="reset" layoutX="250.0" layoutY="560.0" mnemonicParsing="false" onAction="#reset" opacity="0.8" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #000;" text="Reset" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font></Button>
+      <TableView fx:id="ships" editable="true" layoutX="200.0" layoutY="174.0" prefHeight="161.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="tShipSize" editable="false" prefWidth="99.0" resizable="false" text="Ship Size" />
+          <TableColumn fx:id="tShipCount" editable="false" prefWidth="99.0" resizable="false" text="Ship Count" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

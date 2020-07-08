@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" styleClass="BattleshipCover" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BattleshipCover">
+   <children>
+      <Button fx:id="welcome" layoutX="219.0" layoutY="415.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#welcome" opacity="0.82" prefHeight="70.0" prefWidth="180.0" style="-fx-background-color: #000;" text="Main Menu" textAlignment="CENTER" textFill="#45b147" textOverrun="CLIP" wrapText="true">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font>
+         <effect>
+            <Blend mode="SOFT_LIGHT" opacity="0.8" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

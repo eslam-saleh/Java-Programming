@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.WelcomeScreen">
+   <children>
+      <Button fx:id="pvp" layoutX="175.0" layoutY="110.0" mnemonicParsing="false" onAction="#pvp" opacity="0.8" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000;" text="Player VS Player" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font></Button>
+      <Button fx:id="pvc" layoutX="175.0" layoutY="190.0" mnemonicParsing="false" onAction="#pvc" opacity="0.8" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000;" text="Player VS AI" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font></Button>
+      <Button fx:id="cvc" layoutX="175.0" layoutY="270.0" mnemonicParsing="false" onAction="#cvc" opacity="0.8" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000;" text="AI VS AI" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font></Button>
+      <Button fx:id="loadGame" layoutX="175.0" layoutY="350.0" mnemonicParsing="false" onAction="#load" opacity="0.8" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000;" text="Load Game" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font></Button>
+      <Button fx:id="exit" layoutX="175.0" layoutY="520.0" mnemonicParsing="false" onAction="#exit" opacity="0.8" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #000;" text="Exit" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="24.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="138.0" layoutY="28.0" text="BATTLESHIP" textAlignment="CENTER" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="48.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

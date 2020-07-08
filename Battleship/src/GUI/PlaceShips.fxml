@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PlaceShips">
+   <children>
+      <TableView fx:id="ships" editable="true" layoutX="890.0" layoutY="10.0" opacity="0.8" prefHeight="200.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="tShipSize" editable="false" prefWidth="99.0" resizable="false" text="Ship Size" />
+            <TableColumn fx:id="tShipCount" editable="false" prefWidth="99.0" resizable="false" text="Ship Count" />
+         </columns>
+      </TableView>
+      <Button fx:id="addShip" layoutX="890.0" layoutY="230.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#addShip" opacity="0.8" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Add Ship" textAlignment="CENTER" textFill="#45b147" textOverrun="CLIP" wrapText="true">
+         <effect>
+            <Blend mode="SOFT_LIGHT" opacity="0.8" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="startGame" layoutX="890.0" layoutY="470.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#startGame" opacity="0.8" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Start Game" textAlignment="CENTER" textFill="#45b147" textOverrun="CLIP" wrapText="true">
+         <effect>
+            <Blend mode="SOFT_LIGHT" opacity="0.8" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="startGame1" layoutX="890.0" layoutY="540.0" lineSpacing="1.0" mnemonicParsing="false" onAction="#backToMenu" opacity="0.8" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Back To Menu" textAlignment="CENTER" textFill="#45b147" textOverrun="CLIP" wrapText="true">
+         <effect>
+            <Blend mode="SOFT_LIGHT" opacity="0.8" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PlayBoard">
+   <children>
+      <Label fx:id="turn" layoutX="400.0" layoutY="10.0" prefWidth="300.0" text="Player 1 Turn" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="turn1" layoutX="10.0" layoutY="10.0" prefWidth="300.0" text="Player Board" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="turn2" layoutX="790.0" layoutY="10.0" prefWidth="300.0" text="Opponent Board" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="save" layoutX="490.0" layoutY="610.0" mnemonicParsing="false" onAction="#saveFile" opacity="0.8" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000;" text="Save Game" textFill="#45b147">
+      <font>
+         <Font name="Bookman Old Style Bold" size="12.0" />
+      </font></Button>
+      <Button fx:id="nextMove" layoutX="970.0" layoutY="610.0" mnemonicParsing="false" onAction="#nextMove" opacity="0.8" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000;" text="Next Move" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="menu" layoutX="10.0" layoutY="610.0" mnemonicParsing="false" onAction="#backToMenu" opacity="0.8" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #000;" text="Back to Menu" textFill="#45b147">
+         <font>
+            <Font name="Bookman Old Style Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

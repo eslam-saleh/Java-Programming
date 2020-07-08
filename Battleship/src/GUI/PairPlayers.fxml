@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane fx:id="window" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.PairPlayers">
+    <Button fx:id="host" layoutX="200.0" layoutY="75.0" mnemonicParsing="false" onAction="#createGame" opacity="0.8" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Create Game" textFill="#45b147">
+        <font>
+            <Font name="Bookman Old Style Bold" size="18.0" />
+        </font></Button>
+   <Button fx:id="player" layoutX="200.0" layoutY="275.0" mnemonicParsing="false" onAction="#joinGame" opacity="0.8" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Join Game" textFill="#45b147">
+      <font>
+         <Font name="Bookman Old Style Bold" size="18.0" />
+      </font>
+   </Button>
+   <Button fx:id="backToMenu" layoutX="200.0" layoutY="475.0" mnemonicParsing="false" onAction="#backToMenu" opacity="0.8" prefHeight="50.0" prefWidth="200.0" style="-fx-background-color: #000;" text="Back To Menu" textFill="#45b147">
+      <font>
+         <Font name="Bookman Old Style Bold" size="18.0" />
+      </font>
+   </Button>
+   <Label fx:id="waiting" layoutX="150.0" layoutY="175.0" prefHeight="50.0" prefWidth="300.0" textFill="#45b147">
+      <font>
+         <Font name="Bookman Old Style Bold" size="18.0" />
+      </font>
+   </Label>
+</Pane>
